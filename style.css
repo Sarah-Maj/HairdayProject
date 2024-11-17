@@ -25,11 +25,9 @@
     }
 }
 
-/* display the banner when page is fully loaded */
 body.loaded .promo-banner {
     display: block;
 }
-
 
 * {
     margin: 0;
@@ -113,7 +111,7 @@ header nav ul li a {
     color: white;
 }
 
-/* Services Section with Three Columns */
+/* Services Section with 3 Columns */
 #services {
     padding: 60px 20px;
     background-color: #fafafa;
