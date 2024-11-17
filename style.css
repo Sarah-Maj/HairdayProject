@@ -1,0 +1,324 @@
+
+/*Promotional Banner*/
+.promo-banner {
+    background-color: #f78a8f; 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    position: fixed;
+    top: 185px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: none; 
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Banner animation */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* display the banner when page is fully loaded */
+body.loaded .promo-banner {
+    display: block;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e1d7;
+    color: #333;
+    line-height: 1.6;
+    padding-top:80px;
+}
+
+/* Header */
+header {
+    background-color: #ffad9e; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header .logo img {
+    max-width: 150px; 
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Home Section with Banner */
+.home-section {
+    padding: 150px 20px 20px;
+    text-align: center;
+    background-color: #f78a8f;
+    color: white;
+}
+
+
+.home-section .banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-section .banner p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: white;
+    color: #f78a8f;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.cta-button:hover {
+    background-color: #f1c0b9;
+    color: white;
+}
+
+/* Services Section with Three Columns */
+#services {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#services h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f78a8f;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-category {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%; /* Three columns layout */
+    text-align: left;
+}
+
+.service-category h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f78a8f;
+}
+
+.service-category ul {
+    list-style: none;
+}
+
+.service-category li {
+    margin: 10px 0;
+}
+
+.service-category li strong {
+    color: #f78a8f;
+}
+
+@media (max-width: 768px) {
+    .service-category {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-category {
+        width: 100%; /* Stack the columns for very small screens */
+    }
+}
+
+/* Tutorials Section */
+.tutorials-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tutorials-section h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #f78a8f;
+}
+
+.tutorials .tutorial {
+    margin-bottom: 40px;
+}
+
+.tutorials iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    margin: 20px auto;
+}
+
+.tutorials p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Booking Section */
+#booking {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#booking h1 {
+    font-size: 36px;
+    color: #f78a8f;
+    margin-bottom: 30px;
+}
+
+.booking-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #f78a8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f7a7a1;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 36px;
+    color: #f78a8f;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-founders {
+    font-size: 18px;
+    color: #f78a8f;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 36px;
+    color: #f78a8f;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f1c0b9;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer .footer-column {
+    margin-bottom: 10px;
+}
+
+footer .footer-column img {
+    max-width: 100px;
+}
+
+footer p {
+    font-size: 14px;
+}
